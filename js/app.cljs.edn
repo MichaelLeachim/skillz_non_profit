@@ -1,0 +1,3 @@
+{:require  [zelding_skillz.app]
+ :init-fns [zelding_skillz.app/init]
+ :compiler-options {:asset-path "js/app.out"}}

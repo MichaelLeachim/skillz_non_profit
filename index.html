@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Skillzz</title>
+    <script src="vis.min.js"></script>
+    <script src="vis.charting.js"></script>
+    
+    <script
+       src="https://code.jquery.com/jquery-2.2.4.min.js"
+       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+       crossorigin="anonymous"></script>
+    <script src="xlsx.full.min.js"></script>
+    <script src="fileutils.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <!-- <link href="scrollbar.css" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
+    <style>
+      body {
+      display: flex;
+        height: 100vh;
+        flex-direction: column;
+    }
+      select:focus  {
+          box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+          padding: 3px 0px 3px 3px;
+          margin: 5px 1px 3px 0px;
+          border: 1px solid rgba(81, 203, 238, 1);
+      }
+      label {
+         color:black;
+    }
+.headcol {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: auto;
+  border-top-width: 1px;
+  /*only relevant for first row*/
+  margin-top: -1px;
+  /*compensate for top border*/
+    }
+  .table-fixed {
+      background: #eee;
+      width: 200px;
+      position: absolute;
+      left: 0;
+      top: auto;
+      white-space: normal;
+      height: 60px;
+      margin-left: 0px;
+      box-shadow: 2px 0 3px rgba(0,0,0,.25);
+    }
+    
+      
+    </style>
+    <script>
+      window.notify = function(msg){
+         toastr.warning(msg);
+      }
+      window.retooltip = function(){
+         $('.tooltipped').tooltip({delay: 50});
+      }
+    </script>
+  </head>
+  <body id="container">
+    <header id="header">
+    </header>
+    <main id="main">
+    </main>
+    <footer id="footer">
+    </footer>
+
+  </body>
+  <script type="text/javascript" src="js/app.js"></script>
+</html>
