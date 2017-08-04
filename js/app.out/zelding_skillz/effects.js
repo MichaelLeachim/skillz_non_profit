@@ -73,7 +73,7 @@ var on_success = cljs.core.cst$kw$on_DASH_success.cljs$core$IFn$_invoke$arity$1(
 var on_fail = cljs.core.cst$kw$on_DASH_fail.cljs$core$IFn$_invoke$arity$1(data);
 console.log("fx load callback");
 
-try{return (window["load_from_server"]).call(null,"/template.xlsx",((function (on_success,on_fail,G__15950_15957){
+try{return (window["load_from_server"]).call(null,"template.xlsx",((function (on_success,on_fail,G__15950_15957){
 return (function (item){
 var result = cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$variadic(item,cljs.core.array_seq([cljs.core.cst$kw$keywordize_DASH_keys], 0));
 if(!((cljs.core.get.cljs$core$IFn$_invoke$arity$2(result,"json") == null))){
